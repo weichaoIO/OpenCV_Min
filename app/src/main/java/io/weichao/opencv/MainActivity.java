@@ -7,6 +7,12 @@ import android.widget.TextView;
 import org.opencv.android.OpenCVLoader;
 
 public class MainActivity extends AppCompatActivity {
+    // Used to load the 'opencv' library on application startup.
+    static {
+        if (OpenCVLoader.initDebug()) {
+            System.loadLibrary("opencv");
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Example of a call to a native method
-        TextView tv = (TextView) findViewById(R.id.sample_text);
+        TextView tv = findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
     }
 
@@ -23,11 +29,4 @@ public class MainActivity extends AppCompatActivity {
      * which is packaged with this application.
      */
     public native String stringFromJNI();
-
-    // Used to load the 'opencv' library on application startup.
-    static {
-        if (OpenCVLoader.initDebug()) {
-            System.loadLibrary("opencv");
-        }
-    }
 }

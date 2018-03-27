@@ -64,10 +64,12 @@ so manually move them:
 * javadoc\org\opencv\core\MatOfPoint3.html
 * javadoc\org\opencv\core\MatOfPoint3f.html
 * javadoc\org\opencv\core\MatOfRect.html
+* javadoc\org\opencv\core\MatOfRect2d.html
 * javadoc\org\opencv\core\Point.html
 * javadoc\org\opencv\core\Point3.html
 * javadoc\org\opencv\core\Range.html
 * javadoc\org\opencv\core\Rect.html
+* javadoc\org\opencv\core\Rect2d.html
 * javadoc\org\opencv\core\RotatedRect.html
 * javadoc\org\opencv\core\Scalar.html
 * javadoc\org\opencv\core\Size.html
@@ -76,6 +78,14 @@ so manually move them:
 * javadoc\org\opencv\core\package-frame.html
 * javadoc\org\opencv\core\package-summary.html
 * javadoc\org\opencv\core\package-tree.html
+* javadoc\org\opencv\dnn\
+* javadoc\org\opencv\dnn\DictValue.html
+* javadoc\org\opencv\dnn\Dnn.html
+* javadoc\org\opencv\dnn\Layer.html
+* javadoc\org\opencv\dnn\Net.html
+* javadoc\org\opencv\dnn\package-frame.html
+* javadoc\org\opencv\dnn\package-summary.html
+* javadoc\org\opencv\dnn\package-tree.html
 * javadoc\org\opencv\engine\
 * javadoc\org\opencv\engine\package-frame.html
 * javadoc\org\opencv\engine\package-summary.html
@@ -88,11 +98,9 @@ so manually move them:
 * javadoc\org\opencv\features2d\BOWKMeansTrainer.html
 * javadoc\org\opencv\features2d\BOWTrainer.html
 * javadoc\org\opencv\features2d\BRISK.html
-* javadoc\org\opencv\features2d\DescriptorExtractor.html
 * javadoc\org\opencv\features2d\DescriptorMatcher.html
 * javadoc\org\opencv\features2d\FastFeatureDetector.html
 * javadoc\org\opencv\features2d\Feature2D.html
-* javadoc\org\opencv\features2d\FeatureDetector.html
 * javadoc\org\opencv\features2d\Features2d.html
 * javadoc\org\opencv\features2d\FlannBasedMatcher.html
 * javadoc\org\opencv\features2d\GFTTDetector.html
@@ -119,6 +127,7 @@ so manually move them:
 * javadoc\org\opencv\imgproc\package-tree.html
 * javadoc\org\opencv\ml\
 * javadoc\org\opencv\ml\ANN_MLP.html
+* javadoc\org\opencv\ml\ANN_MLP_ANNEAL.html
 * javadoc\org\opencv\ml\Boost.html
 * javadoc\org\opencv\ml\DTrees.html
 * javadoc\org\opencv\ml\EM.html
@@ -126,6 +135,7 @@ so manually move them:
 * javadoc\org\opencv\ml\LogisticRegression.html
 * javadoc\org\opencv\ml\Ml.html
 * javadoc\org\opencv\ml\NormalBayesClassifier.html
+* javadoc\org\opencv\ml\ParamGrid.html
 * javadoc\org\opencv\ml\RTrees.html
 * javadoc\org\opencv\ml\SVM.html
 * javadoc\org\opencv\ml\SVMSGD.html
@@ -142,6 +152,12 @@ so manually move them:
 * javadoc\org\opencv\objdetect\package-frame.html
 * javadoc\org\opencv\objdetect\package-summary.html
 * javadoc\org\opencv\objdetect\package-tree.html
+* javadoc\org\opencv\osgi\
+* javadoc\org\opencv\osgi\OpenCVInterface.html
+* javadoc\org\opencv\osgi\OpenCVNativeLoader.html
+* javadoc\org\opencv\osgi\package-frame.html
+* javadoc\org\opencv\osgi\package-summary.html
+* javadoc\org\opencv\osgi\package-tree.html
 * javadoc\org\opencv\photo\
 * javadoc\org\opencv\photo\AlignExposures.html
 * javadoc\org\opencv\photo\AlignMTB.html
@@ -204,11 +220,11 @@ Moved Files:
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => openCVLibrary320\src\main\AndroidManifest.xml
-* lint.xml => openCVLibrary320\lint.xml
-* res\ => openCVLibrary320\src\main\res\
-* src\ => openCVLibrary320\src\main\java\
-* src\org\opencv\engine\OpenCVEngineInterface.aidl => openCVLibrary320\src\main\aidl\org\opencv\engine\OpenCVEngineInterface.aidl
+* AndroidManifest.xml => openCVLibrary340\src\main\AndroidManifest.xml
+* lint.xml => openCVLibrary340\lint.xml
+* res\ => openCVLibrary340\src\main\res\
+* src\ => openCVLibrary340\src\main\java\
+* src\org\opencv\engine\OpenCVEngineInterface.aidl => openCVLibrary340\src\main\aidl\org\opencv\engine\OpenCVEngineInterface.aidl
 
 Next Steps:
 -----------
